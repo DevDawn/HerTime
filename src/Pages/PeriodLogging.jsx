@@ -76,7 +76,7 @@ const PeriodLogging = () => {
           <div>
             <label className="block text-gray-700 mb-1 font-medium">
               <FaCalendarAlt className="inline-block mr-2 text-pink-500" />
-              Current Period Start
+              Last Period Start
             </label>
             <DatePicker
               selected={startDate}
@@ -91,7 +91,7 @@ const PeriodLogging = () => {
           <div>
             <label className="block text-gray-700 mb-1 font-medium">
               <FaCalendarAlt className="inline-block mr-2 text-pink-500" />
-              Current Period End
+              Last Period End
             </label>
             <DatePicker
               selected={endDate}
@@ -120,10 +120,8 @@ const PeriodLogging = () => {
           </div>
         </div>
 
-        {/* Results Section */}
         {periodDuration && nextPeriodStartDate && nextPeriodEndDate && ovulationDate ? (
           <div className="space-y-6">
-            {/* Hey Girl: Next Period */}
             <div className="bg-pink-50 p-4 rounded-lg shadow">
               <h2 className="text-xl font-semibold text-pink-600 mb-2 flex items-center">
                 Hey Girl <span className="ml-2">🌸</span>

@@ -11,7 +11,7 @@ const InsightsPage = () => {
       <h1 className="text-3xl font-bold text-center text-pink-500 mb-8">
         Health Insights
       </h1>
-      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-2">
         {Insights.map((insight) => (
           <div key={insight.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
             <img

@@ -8,8 +8,8 @@ const LandingPage = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="mt-15 flex-grow">
+
         <section className="relative bg-cover bg-center">
-  
           <FaHeartbeat className="absolute top-5 left-5 text-white opacity-30 text-4xl" />
           <FaRegCalendarAlt className="absolute bottom-10 right-5 text-white opacity-30 text-4xl" />
           <FaLightbulb className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white opacity-30 text-5xl" />
@@ -22,11 +22,14 @@ const LandingPage = () => {
                 Empowering Women Through Menstrual Health Awareness
               </h1>
               <p className="text-lg text-white mb-8">
-                Track your cycle, manage symptoms, and take control of your health.
+                Track your cycle, manage symptoms, and take control of your health. 
               </p>
+              <a href="/period-logging">
               <button className="bg-white cursor-pointer text-pink-400 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
-                Get Started
+                Log Period
               </button>
+              </a>
+              
             </div>
           </div>
         </section>
@@ -46,7 +49,7 @@ const LandingPage = () => {
             <div className="flex flex-col md:flex-row items-center md:space-x-8">
               <div className="md:w-1/2 mb-6 md:mb-0">
                 <img
-                  src="https://sf-maas-uat-prod.oss-cn-shanghai.aliyuncs.com/outputs/31922ed8-fdc3-44df-a987-f4ee3932f229_0.png"
+                  src="/managingpms.jpeg"
                   alt="Menstrual Health Issues"
                   className="rounded-lg shadow-lg object-cover w-full h-auto"
                 />
@@ -133,9 +136,9 @@ const LandingPage = () => {
                 From Struggle to Solution: My Journey with Irregular Periods
               </h2>
               <p className="text-gray-700 text-lg mb-4">
-                As a software engineer, I’ve always been passionate about solving problems. But when it came to my own health,
+                My name is Dawn Antigha Cobham, as a software engineer, I’ve always been passionate about solving problems. But when it came to my own health,
                 I felt powerless. I struggled with irregular periods and debilitating cramps for years, often missing work and
-                social events. Doctors couldn’t provide clear answers, and I felt alone.
+                sschool. I took alot of pain relivers and most times I felt alone.
               </p>
               <p className="text-gray-700 text-lg">
                 That’s when I decided to take matters into my own hands and create HerTime—a web app designed to empower women
@@ -154,12 +157,17 @@ const LandingPage = () => {
               Join thousands of women taking charge of their menstrual wellness. Sign up today!
             </p>
             <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
-              <button className="bg-white text-pink-400 px-6 py-3 rounded-full cursor-pointer font-semibold hover:bg-gray-100 transition">
-                Sign Up Now
+            <a href="/register">
+             <button className="bg-white text-pink-400 px-6 py-3 rounded-full cursor-pointer font-semibold hover:bg-gray-100 transition">
+                Sign-Up
               </button>
-              <button className="bg-white text-pink-400 px-6 py-3 cursor-pointer rounded-full font-semibold hover:bg-gray-100 transition">
+            </a>
+              <a href="/insights">
+               <button className="bg-white text-pink-400 px-6 py-3 cursor-pointer rounded-full font-semibold hover:bg-gray-100 transition">
                 Learn More
               </button>
+              </a>
+              
             </div>
           </div>
         </section>
